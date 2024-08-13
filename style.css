@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(espaco.jpg);
+    background-size: cover;
+    animation: tranlacao 20s linear infinite;
+}
+
+.globo {
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    border-radius: 50%;
+    background: url(tatooine.jpg);
+    background-size: cover;
+    box-shadow: -25px -25px 25px black inset, 0px 0px 25px white, 0px 0px 48px rgb(255, 123, 0);
+    animation: rotacionar 10s linear infinite;
+    display: flex;
+}
+
+@keyframes rotacionar {
+    to {
+        background-position: -200%;
+    }
+}   
+
+@keyframes tranlacao{
+    8% {
+
+    }
+    100% {
+        background-position: -1000%;
+    }
+}
